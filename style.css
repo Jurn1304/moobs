@@ -1,0 +1,208 @@
+/*Body*/
+body {
+  font-family: "Lato", sans-serif;
+  background-image: url("https://cdn.glitch.com/90e8ef93-fc25-44f1-bd2d-3cb287aa0d0b%2FAfbeelding2.jpg?v=1567937812041");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0px;
+  background-size: 100% 100%;
+  color: white;
+}
+
+@media only screen and (max-width: 1299x) {
+  body {
+    background-image: url("https://cdn.glitch.com/90e8ef93-fc25-44f1-bd2d-3cb287aa0d0b%2Fleonardo-yip-1uy5I27gi3Q-unsplash.jpg?v=1567435692657");
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    margin: 0px;
+    background: 100% 100%;
+    display: flex;
+  }
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #ebe8e8; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+summary,
+details {
+  color: white;
+  text-shadow: 1px 1px 4px #000000;
+}
+
+a {
+  box-shadow: none;
+}
+.title {
+  padding: 50px;
+}
+
+.blok {
+  box-shadow: 1px 1px 3px #a8a8a8;
+  background-color: #3B3A3A;
+  color: white;
+  padding: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  text-align: center;
+  max-width: 60%;
+  min-widht: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  overflow: auto !important;
+}
+
+.blok:hover {
+  background-color: grey;
+}
+
+.blok::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.blok-app {
+  box-shadow: 1px 1px 3px #a8a8a8;
+  background-color: #3B3A3A;
+  color: white;
+  padding: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  text-align: center;
+  max-width: 85%;
+  min-widht: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  overflow: auto !important;
+}
+
+.blok-app::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Summary en Details*/
+
+summary {
+  font-size: 20px;
+  transition: 0.5s;
+  font-family: "Roboto", sans-serif;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 0px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+details {
+  border-radius: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+details:hover {
+  background-color: grey;
+  border-radius: 5px;
+}
+
+.balk {
+  margin: 10px;
+  position: fixed;
+  top: 0 !important;
+}
+
+table {
+  box-shadow: 1px 1px 3px grey;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: white;
+  background-color: #3B3A3A;
+}
+
+td,
+th {
+  text-shadow: 1px 1px 4px #000000;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  text-shadow: 1px 1px 4px #e8e8e8;
+  background-color: #dddddd;
+  color: black;
+}
+
+button {
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  color: rgba(28, 190, 131, 1);
+  brackground-color: transparent;
+  border: 1px solid rgba(28, 190, 131, 1);
+  border-radius: 100px !important;
+  padding: 0.3em 1.2em;
+  margin: 5px;
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    to right,
+    transparent 50%,
+    rgba(28, 190, 131, 1) 50%
+  );
+  transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s,
+    color 0.5s ease 0s, background-color 0.5s ease;
+}
+
+button:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(28, 190, 131, 1);
+  background-position: -100% 100%;
+}
+
+button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+  transition: 0s;
+}
+
+button:disabled:hover {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+.Div-open {
+  display: none;
+}

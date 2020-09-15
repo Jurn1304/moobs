@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/load/css.css" />
+    <script src="/load/js.js"></script>
+    <script src="/script.js"></script>
+    <script>
+      function KeyPress(e) {
+        var evtobj = window.event ? event : e;
+        if (evtobj.keyCode == 81 && evtobj.ctrlKey) {
+          document.getElementById("proefperiode").disabled = true;
+        }
+      }
+      document.onkeydown = KeyPress;
+
+      if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(
+          navigator.userAgent
+        )
+      ) {
+        window.open("//m-moobs.glitch.me", "_self");
+      }
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/youtube-player.css" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <link rel="canonical" href="https://moobs.glitch.me/" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn.glitch.com/90e8ef93-fc25-44f1-bd2d-3cb287aa0d0b%2FMoobs-logo-website.png?v=1584092407388"
+    />
+
+    <meta name="theme-color" content="#14C7DB" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <title>Moobs Website - Voor en door Moobs</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="pleaserotate.min.js"></script>
+    <script>
+      var portrait = window.innerWidth < window.innerHeight;
+      var PleaseRotateOptions = {
+        onlyMobile: true,
+        forcePortrait: !portrait
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"
+    />
+  </head>
+  <body>
+    <div id="wrapper"></div>
+    <ul class="nav nav-pills balk">
+      <li class="nav-item">
+        <a class="nav-link active" href="#Home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Nieuws">Nieuws</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Info">Informatie</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Muziek">Muziek</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Media">Media</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="login.php">Login</a>
+      </li>
+      <!--  <li class="nav-item"> 
+   <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  </li> -->
+    </ul>
+
+    <br />
+    <div class="blok" id="Home">
+      <h1>
+        Welkom op de Moobs Website
+      </h1>
+      <p>
+        Dit is de website voor Moebsies, door Moebsies. Wij werken veel aan deze
+        website. Dit is de nieuwe website
+        <a href="//oude-moobs.glitch.me"
+          >(Ga naar de oude verzie van deze website)</a
+        >
+        en deze website krijgt updates.
+      </p>
+      <br />
+      <h2>
+        Moobs Cookie beleid:
+      </h2>
+      <p>
+        De Moobs website maakt gebruik van cookies.
+      </p>
+      <form action="cookie.html">
+        <button>Ga naar cookie-beleid</button>
+      </form>
+      <br />
+      <h2>
+        Neem proefperiode:
+      </h2>
+      <p>
+        Als je even wil kijken of je een Moobs wilt worden, neem dan een
+        proefperiode. Klik op de onderstaande knop voor de instructies.
+      </p>
+      <form action="instr.html">
+        <button id="proefperiode">Instructies voor proefperiode</button>
+      </form>
+      <br />
+
+      <h2>
+        Moobs Logo:
+      </h2>
+      <button onclick="ToggleDiv()">Open/Sluit Moobs Logo</button>
+      <div id="DIV" class="Div-open">
+        <br />
+        <img
+          src="https://cdn.glitch.com/90e8ef93-fc25-44f1-bd2d-3cb287aa0d0b%2FMoobs%20512x512.png?v=1567700135164"
+          alt="Moobs Logo"
+          height="150px;"
+        />
+      </div>
+      <br />
+      <br />
+      <h2>
+        Moobs Assistent (BETA):
+      </h2>
+      <form
+        action="https://bot.dialogflow.com/921a1af4-f97c-4b64-9caa-e2e732e5bff3"
+      >
+        <button>Ga naar de Moobs google assistant</button>
+      </form>
+    </div>
+
+    <div class="blok" id="Nieuws">
+      <h1>
+        Nieuws
+        <p><small>Hier het laatste Moobs nieuws:</small></p>
+      </h1>
+      <table>
+        <tr>
+          <td><strong>Datum:</strong></td>
+          <td><strong>Nieuws:</strong></td>
+        </tr>
+        <tr>
+          <td>5-11-2019</td>
+          <td>Moobs Leider ontslagen</td>
+        </tr>
+        <tr>
+          <td>20-11-2019</td>
+          <td>Moobs Logo mozaiek project gestart</td>
+        </tr>
+        <tr>
+          <td>25-11-2019</td>
+          <td>Moobs gepromoveerd naar Hoge Moobs</td>
+        </tr>
+        <tr>
+          <td>26-11-2019</td>
+          <td>
+            Verbeterd rangen-systeem en duidelijke uitleg op de Moobs Website
+          </td>
+        </tr>
+        <tr>
+          <td>5-12-2019</td>
+          <td>Mozaiek project afgelopen, Moobs logo gemaakt</td>
+        </tr>
+        <tr>
+          <td>8-12-2019</td>
+          <td>
+            Moobs Leider gepromoveerd naar Opperleider (gedeeld
+            opperleidersschap)
+          </td>
+        </tr>
+        <tr>
+          <td>23-1-2020</td>
+          <td>Moobs gepromoveerd naar VIP Moobs</td>
+        </tr>
+        <tr>
+          <td>15-2-2020</td>
+          <td>Moobs gepromoveerd naar Hoge Moobs</td>
+        </tr>
+        <tr>
+          <td>24-8-2020</td>
+          <td>Meerdere Moebsies gepromoveerd!</td>
+        </tr>
+      </table>
+
+      <br />
+      <h2>
+        Hier de laatste website-updates:
+      </h2>
+      <table>
+        <tr>
+          <td><strong>Datum:</strong></td>
+          <td><strong>Nieuws:</strong></td>
+        </tr>
+        <tr>
+          <td>23-11-2019</td>
+          <td>Tabel Nieuws erbij, schaduw-effecten</td>
+        </tr>
+        <tr>
+          <td>24-11-2019</td>
+          <td>
+            Proefperiode toegevoegd, login bugs opgelost en nieuwe knoppen
+          </td>
+        </tr>
+        <tr>
+          <td>26-11-2019</td>
+          <td>Rangen update (bij <a href="#Info">Informatie</a>)</td>
+        </tr>
+        <tr>
+          <td>7-12-2019</td>
+          <td>Chatsysyteem verdwijderd, en een nieuwe toegevoegd!</td>
+        </tr>
+        <tr>
+          <td>9-12-2019</td>
+          <td>Het chatsysteem is nu bereikbaar op elke pagina</td>
+        </tr>
+        <tr>
+          <td>16-12-2019</td>
+          <td>Moobs Mozaiek project-foto op de website gezet</td>
+        </tr>
+        <tr>
+          <td>
+            20-12-2019
+          </td>
+          <td>Moobs Mozaiek foto nu in <a href="#Kunst">Moobs Art</a>.</td>
+        </tr>
+        <tr>
+          <td>26-1-2020</td>
+          <td><a href="error/404.html">404 pagina</a> gemaakt</td>
+        </tr>
+        <tr>
+          <td>13-2-2020</td>
+          <td>Nieuw icoon tijdens het laden</td>
+        </tr>
+        <tr>
+          <td>15-2-2020</td>
+          <td>Moobs Art update!</td>
+        </tr>
+        <tr>
+          <td>18-3-2020</td>
+          <td>Discord en Reddit link, nieuwe <a href="#Muziek">liedjes!</a></td>
+        </tr>
+        <tr>
+          <td>27-3-2020</td>
+          <td>Whatsapp groepsapp link toegevoegd</td>
+        </tr>
+        <tr>
+          <td>1-6-2020</td>
+          <td>Dark Mode!</td>
+        </tr>
+        <tr>
+          <td>24-6-2020</td>
+          <td>Moobs Platform Game Preview toegevoegd</td>
+        </tr>
+        <tr>
+          <td>24-8-2020</td>
+          <td>
+            Nieuwe geordende website terug: nieuwe tabjes:
+            <a href="#Media">Media</a> en
+            <a href="#Applicaties">Applicaties!</a>
+          </td>
+          <tr>
+          <td>15-9-2020</td>
+            <td>Moobs Website en Moobs Login van elkaar gescheiden. Nu laad de Moobs website meteen, maar moet je wel wachten voor login</td>
+          </tr>
+        </tr>
+      </table>
+    </div>
+
+    <div class="blok" id="Kunst">
+      <h1>
+        Moobs Art
+      </h1>
+      <h2>
+        Het Mozaiek Logo:
+      </h2>
+      <p>
+        Dit was het laatste project van de Moobs naast de Moobs Website.
+      </p>
+      <img
+        src="https://cdn.glitch.com/90e8ef93-fc25-44f1-bd2d-3cb287aa0d0b%2FMoobs-art-mozaiek.jpg?v=1576495287049"
+        height="300"
+      />
+      <br />
+      <br />
+      <h2>
+        Het Grafitti Logo:
+      </h2>
+      <p>
+        Moobs Grafitti!
+      </p>
+      <br />
+      <img
+        src="https://cdn.glitch.com/90e8ef93-fc25-44f1-bd2d-3cb287aa0d0b%2FMoobs-logo-grafitti.png?v=1576857996913"
+        height="300"
+      />
+      <br />
+      <br />
+      <h2>
+        Het Moobs Poffer Logo:
+      </h2>
+      <p>
+        Zin in poffertjes...?
+      </p>
+      <br />
+      <img
+        src="https://cdn.glitch.com/90e8ef93-fc25-44f1-bd2d-3cb287aa0d0b%2FIMG_2525.jpg?v=1577712083696"
+        height="300"
+      />
+      <br />
+      <br />
+      <h2>
+        Moobs-Pixel-Logo
+      </h2>
+      <p>
+        Logo voor trage computers (15x15)
+      </p>
+      <img
+        src="https://cdn.glitch.com/90e8ef93-fc25-44f1-bd2d-3cb287aa0d0b%2FMoobs-logo-15x15.png?v=1581759391481"
+      />
+    </div>
+
+    <div class="blok" id="Info">
+      <h1>
+        Informatie
+      </h1>
+      <div style="padding-right: 25%!important;" class="details" id="calc">
+        <details>
+          <summary>Locaties:</summary>
+
+          <h2>Max Havelaar Kindcentrum</h2>
+          <hr class="hr" />
+          <iframe
+            class="maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2455.6109049799475!2d4.354387915329722!3d52.01396767972154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b5c3676505ef%3A0x90731e44cc017cf8!2sMax+Havelaarschool!5e0!3m2!1snl!2snl!4v1548409366829"
+            width="auto"
+            height="450"
+            frameborder="0"
+            style="border:0"
+            allowfullscreen
+          >
+            title="Maxhavelaar Kindcentrum"</iframe
+          >
+          <h2>Delftse Montesorri kindcentrum</h2>
+          <hr class="hr" />
+          <iframe
+            class="maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2456.2929778124085!2d4.346828315329144!3d52.001539079719336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b5b9c89721ab%3A0x949ce8cc7d540b62!2sKindercentrum+ZieZoo+-+Delftse+Montessorischool+DMS!5e0!3m2!1snl!2snl!4v1548409445436"
+            width="auto"
+            height="450"
+            frameborder="0"
+            style="border:0"
+            allowfullscreen
+            title="Delftse Montesorri kindcentrum"
+          ></iframe>
+          <h2>Ring Pass Delft</h2>
+          <hr class="hr" />
+          <iframe
+            class="maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2455.910521758911!2d4.335152315329461!3d52.0085083797206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b4353a8c5eb9%3A0x42c490bb9dc171eb!2sRing+Pass+Delftse+Hockey-+en+Tennisclub!5e0!3m2!1snl!2snl!4v1548409518049"
+            width="auto"
+            height="450"
+            frameborder="0"
+            style="border:0"
+            allowfullscreen
+            title="Ring Pass Delft"
+          ></iframe>
+          <h2>Maria School</h2>
+          <hr class="hr" />
+          <iframe
+            class="maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2456.2357596103507!2d4.3329565153291885!3d52.00258177971957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b5b4d42ca6c5%3A0x1cb5eb22b3c87982!2sRooms+Katholieke+Basisschool+(RKBS)+Maria!5e0!3m2!1snl!2snl!4v1550654284142"
+            width="auto"
+            height="450"
+            frameborder="0"
+            style="border:0"
+            allowfullscreen
+            title="Maria School"
+          ></iframe>
+
+          <button onclick="addRow()">
+            Laat kaarten zien:
+          </button>
+          <div class="maps" id="content"></div>
+        </details>
+        <br />
+        <details>
+          <summary>Sporten:</summary>
+          <h1>Moobs sporten:</h1>
+          <hr />
+          <h3>Moobs Hockey:</h3>
+          <h4>Regels:</h4>
+          <ol>
+            <li>Als normaal Hockey.</li>
+          </ol>
+          <h4>Spelverloop:</h4>
+          <ol>
+            <li>Het zelfde als hockey.</li>
+            <li>Hockeyen in de Moebsie Houding.</li>
+          </ol>
+          <hr />
+          <h2>Moobs Fu:</h2>
+          <h3>Regels:</h3>
+          <ol>
+            <li>Het zelfde als Kong Fu</li>
+            <li>Vliegen is toegestaan.</li>
+          </ol>
+          <h3>Spelverloop:</h3>
+          <ol>
+            <li>Aan het begin buigen</li>
+            <li>Tegelijk aanvallen</li>
+          </ol>
+          <hr />
+          <h3>Moobs Knotshockey:</h3>
+          <h4>Regels:</h4>
+          <ol>
+            <li>Als normaal Knotshockey.</li>
+          </ol>
+          <h4>Spelverloop:</h4>
+          <ol>
+            <li>Het zelfde als Knotshockey.</li>
+            <li>In de eerste helft Knotshockeyen in de Moebsie Houding.</li>
+            <li>In de tweede helft Knotshockeyen in de Vlieg Houding.</li>
+          </ol>
+          <hr />
+        </details>
+        <br />
+        <details>
+          <summary>Rangen:</summary>
+          <h1>Moobs rangen:</h1>
+          <hr />
+          <table>
+            <tr>
+              <th>Rang:</th>
+              <th>In Cijfer:</th>
+            </tr>
+            <tr>
+              <td>Moobs Helper</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Lage Moobs</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Normale Moobs</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Hoge Moobs</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>VIP Moobs</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Elite Moobs</td>
+              <td>5</td>
+            </tr>
+          </table>
+
+          <br />
+          <h3>
+            Hoe werkt het Moobs rangen-systeem?
+          </h3>
+          <p>
+            Als je Moobs word krijg je aan het begin een rang, meestal is dat
+            Gemiddelde Moobs, en als je goed je best hebt gedaan bij de test,
+            word dat Hoge Moobs. Hoe meer je meespeelt, hoe sneller je een
+            hogere rang word, maar als je iets heel slechts hebt gedaan, word je
+            gedegradeerd. Het hoogste wat je kan worden is Elite Moobs, rang 5.
+            Als Moobs Helper ben je half Moobs, en help je een beetje mee met de
+            Moobs
+          </p>
+          <table>
+            <tr>
+              <th>Rang:</th>
+              <th>In Cijfer:</th>
+              <th>Aantal Moebsies vereist:</th>
+            </tr>
+            <tr>
+              <td>Leider</td>
+              <td>6</td>
+              <td>2 Moebsies</td>
+            </tr>
+            <tr>
+              <td>Legendary Leider</td>
+              <td>7</td>
+              <td>5 Moebsies (1 met rang 3+)</td>
+            </tr>
+            <tr>
+              <td>Ultra Legendary Leider</td>
+              <td>8</td>
+              <td>10 Moebsies (1 met rang 4+)</td>
+            </tr>
+            <tr>
+              <td>Elite Leider</td>
+              <td>9</td>
+              <td>15 Moebsies (1 met rang 5)</td>
+            </tr>
+            <tr>
+              <td>Ultra Elite Leider</td>
+              <td>10</td>
+              <td>20 Moebsies (1 met rang 6+)</td>
+            </tr>
+            <tr>
+              <td>Opperleider</td>
+              <td>11</td>
+              <td>Oprichten van Moobs</td>
+            </tr>
+          </table>
+
+          <br />
+          <h3>
+            Hoe werkt het Moobs Leiders rangen-systeem?
+          </h3>
+          <p>
+            Om een hogere Leider te worden heb je meer Moebsies nodig. Als je er
+            genoeg hebt gesticht, wordt je een hogere rang. Het aantal Moebsies
+            dat je nodig hebt staat in het tabel. Je kan imprecipe geen
+            Opperleider worden
+          </p>
+          <h3>
+            Hoe word ik Leider?
+          </h3>
+          <p>
+            Als je Leider wilt worden, moet je het eerst aan jouw Leider vragen.
+            Als het verzoek is goedgekeurd, moet je eerst 2 nieuwe Moebsies
+            maken. Dan ben je een Leider!
+          </p>
+          <h3>
+            Hoe zit het nou met mijn Moobs en Leider rang?
+          </h3>
+          <p>
+            Als Moobs krijg je een rang. Maar als je ook Leider bent heb je twee
+            rangen, bijvoorbeeld: VIP Moobs en Legendary Leider. Je bent nog een
+            Moobs en een Leider. Dan kun je nog steeds hoger worden als Moobs en
+            als Leider-rang.
+          </p>
+          <br />
+        </details>
+        <br />
+        <details>
+          <summary>Regels:</summary>
+          <h1>Moobs regels:</h1>
+          <hr />
+          <p>Dit zijn de regels van de Moebsies:</p>
+          <li>Je mag geen Moebsie uitschelden en/of beledigen.</li>
+          <li>
+            Je moet elke maand minimaal 1 keer meespelen en/of Moebsie gedaan
+            hebben.
+          </li>
+          <li>Je moet de bevelen van de Moebsie (opper)leider opvolgen.</li>
+          <li>
+            Als je een baasje hebt moet je naar hem of haar luisteren.
+          </li> </details
+        ><br />
+        <details>
+          <summary>Dialecten</summary>
+          <h1>Moobs Dialecten</h1>
+          <p>Alle Moobs Dialecten zijn gebaseerd op het Moobsans</p>
+          <h2>Moobsans:</h2>
+          <p>Moobs, Maabs Moebsie, Manamanamaabs, Moo</p>
+          <h2>West-Moebsieaans:</h2>
+          <p>Mroobs, Mraabs, Mroebsie, Mranamranamraabs, Mroo</p>
+          <h2>Oost-Moebsieaans:</h2>
+          <p>Moo, Maa, Moebieb, Manamana</p> </details
+        ><br />
+        <details>
+          <summary>Schrijfwijze in NL:</summary>
+          <h1>Moobs Schrijfwijze in de Nederlandse taal: (regels en meer)</h1>
+          <hr />
+
+          <p>
+            Enkelvoud: Moobs, Meervoud: Moebsie. In de vorm van enkelvoud kan
+            het niet alleen moobs zijn maar ook Moebsie als de meervoud vorm
+            Moebsies is: Moebsie, Moebsies. Moebsie, Moobs en Moebsies kunnen
+            een lijdend voorwerp en een meewerkend voorwerp zijn, en ook een
+            bijwoordelijke bepaling: Niet van tijd of plaats etc. maar van
+            moobsgraaderigheid en moobsaanwezigheid, kunnen ze indien van
+            toepassing gebruikt worden maar als Moobs, Moebsie of Moebsies als
+            het onderwerp is dan kan het niet. Moobs etc. kan eventueel indien
+            van toepassing ook als voorzetselvoorwerp gebruikt worden als Moobs
+            etc. in een werwoordelijke vorm staat bijv: Moebsieen. Moobs etc.
+            valt onder de zelfstandige naamwoorden, maar als het in een
+            werkwoordelijke vorm staat dan is het een werkwoord. Het kan ook een
+            voornaamwoord zijn bijv: Maabs. Echter kan Moobs etc. GEEN Lidword,
+            Telwoord, Bijwoord, of een Tussenwerpsel zijn.
+          </p>
+          <br /> </details
+        ><br />
+        <details>
+          <summary>Politiek:</summary>
+          <h1>Moobs Politiek:</h1>
+          <hr />
+          <p>
+            Als een van de Leiders van een locatie een idee heeft gaat het als
+            volgt:
+          </p>
+          <ul>
+            <li>1. Alle Leiders komen bij een om te overleggen.</li>
+            <li>
+              2. Alle Leideris stemmen of ze het idee goed of slecht vinden.
+            </li>
+            <li>
+              3. Als de meeste stemmen ja zeggen wordt het idee doorgestuurd
+              naar de Opperleider.
+            </li>
+            <li>
+              4. Als de Opperleider het goed vindt, dan is het vastgelegd!
+            </li>
+          </ul>
+          <br />
+          <div class="img">
+            <img
+              src="https://cdn.glitch.com/90e8ef93-fc25-44f1-bd2d-3cb287aa0d0b%2Fuitleg1.png?v=1567936426667"
+              width="auto"
+              height="auto"
+            />
+          </div>
+          <br /><br />Waneer er een gelijke stand is bij stap 3:
+          <ul>
+            <li>
+              1. Alle Leiders berekenen hun cijfer op basis van welke rang ze
+              zijn in cijfers (bijv: Leider:15).
+            </li>
+            <li>2. Aan alle bijde kanten worden de cijfers opgeteld.</li>
+            <li>3. De kant met het hoogste getal krijgt gelijk.</li>
+          </ul>
+          <br />
+          <div class="img">
+            <img
+              src="https://cdn.glitch.com/90e8ef93-fc25-44f1-bd2d-3cb287aa0d0b%2Fuitleg2.png?v=1567936432014"
+              width="auto"
+              height="auto"
+            /></div
+        ></details>
+      </div>
+    </div>
+
+    <div class="blok" id="Muziek">
+      <h1>
+        Muziek
+      </h1>
+      <p>
+        Moobs aanbevolen muziekjes:
+      </p>
+      <div class="slideshow-container">
+        <div class="mySlides">
+          <div class="numbertext">1 / 7</div>
+
+          <div class="youtube-player" data-id="w0AOGeqOnFY"></div>
+          <div class="text">Da Coconut Song</div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 7</div>
+          <div class="youtube-player" data-id="IJNR2EpS0jw"></div>
+          <div class="text">Dumb Ways To Die</div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 7</div>
+
+          <div class="youtube-player" data-id="HBjDZMJUduo"></div>
+          <div class="text">Nein Mann</div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 7</div>
+
+          <div class="youtube-player" data-id="ECmpUJdgm-g"></div>
+          <div class="text">Duck Song 1 - 2 - 3</div>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">5 / 7</div>
+          <div class="youtube-player" data-id="L5inD4XWz4U"></div>
+          <div class="text">Everybody Do The Flop</div>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">6 / 7</div>
+
+          <div class="youtube-player" data-id="h9J2d3P3-qE"></div>
+          <div class="text">Deep Caverns (Hypixel Skyblock OST)</div>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">7 / 7</div>
+
+          <div class="youtube-player" data-id="IMMV6JJjHZo"></div>
+          <div class="text">Abstract Ringing (Hypixel Skyblock OST)</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+      </div>
+      <br />
+
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides((slideIndex += n));
+        }
+
+        function currentSlide(n) {
+          showSlides((slideIndex = n));
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+      </script>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var div,
+            n,
+            v = document.getElementsByClassName("youtube-player");
+          for (n = 0; n < v.length; n++) {
+            div = document.createElement("div");
+            div.setAttribute("data-id", v[n].dataset.id);
+            div.innerHTML = labnolThumb(v[n].dataset.id);
+            div.onclick = labnolIframe;
+            v[n].appendChild(div);
+          }
+        });
+
+        function labnolThumb(id) {
+          var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
+            play = '<div class="play"></div>';
+          return thumb.replace("ID", id) + play;
+        }
+
+        function labnolIframe() {
+          var iframe = document.createElement("iframe");
+          var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+          iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+          iframe.setAttribute("frameborder", "0");
+          iframe.setAttribute(
+            "allow",
+            "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          );
+
+          iframe.setAttribute("allowFullScreen", "");
+
+          this.parentNode.replaceChild(iframe, this);
+        }
+      </script>
+    </div>
+
+    <div class="blok" id="Media">
+      <h1>
+        Media
+      </h1>
+      <h2>
+        Join onze discord server!
+      </h2>
+      <p>
+        Join onze Moobs discord server!
+      </p>
+      <form action="https://discord.gg/6EDsJw">
+        <button>
+          Join onze discord!
+        </button>
+      </form>
+
+      <br />
+      <h2>
+        Moobs Subreddit!
+      </h2>
+      <p>
+        Moobs Subreddit is er!
+      </p>
+      <form action="https://www.reddit.com/r/moebsie/">
+        <button>
+          Ga Naar De Moobs Subreddit!
+        </button>
+      </form>
+      <br />
+      <h2>
+        De Moobs Whatsapp Groep
+      </h2>
+      <p id="about">
+        Join de Moobs Whatsapp Groep!
+      </p>
+      <form action="https://chat.whatsapp.com/JkKBZRq7bQzIiWNIUrQ3oO">
+        <button>
+          Ga nu naar de Moobs Whatsapp Groep (Werkt alleen op Mobiel/Mac/Pc)
+        </button>
+      </form>
+      <br />
+      <h2>
+        Moobs Platform Game
+      </h2>
+      <p>
+        De Moobs Platform Game! Preview Verzie: PreClassic 1.7:
+      </p>
+      <form action="http://plat.mygamesonline.org/">
+        <button>
+          Ga naar Moobs Platform Game
+        </button>
+      </form>
+    </div>
+
+    <!-- cookie popup -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"
+      data-cfasync="false"
+    ></script>
+    <script>
+      window.cookieconsent.initialise({
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          }
+        },
+        theme: "classic",
+        position: "bottom-left",
+        content: {
+          message: "De Moobs website gebruikt cookies!",
+          dismiss: "Oke",
+          link: "Meer leren?",
+          href: "https://moobs.glitch.me/cookie.html"
+        }
+      });
+    </script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function() {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/5ca49f6c1de11b6e3b06a96e/default";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <script></script>
+  </body>
+</html>
