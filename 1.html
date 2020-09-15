@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/load/css.css" />
+    <script src="/load/js.js"></script>
+    <script src="/script.js" async></script>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="canonical" href="https://moobs.glitch.me/" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn.glitch.com/90e8ef93-fc25-44f1-bd2d-3cb287aa0d0b%2FMoobs%20512x512.png?v=1567700135164"
+    />
+    <meta name="theme-color" content="#14C7DB" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <title>Moobs ...</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="pleaserotate.min.js"></script>
+    <script>
+      var portrait = window.innerWidth < window.innerHeight;
+      var PleaseRotateOptions = {
+        onlyMobile: true,
+        forcePortrait: !portrait
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"
+    />
+  </head>
+  <body>
+    <div id="wrapper"></div>
+    <ul class="nav nav-pills balk">
+      <li class="nav-item">
+        <a class="nav-link active" href="/index.html/#Home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/index.html/#Nieuws">Nieuws</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/index.html/#Info">Informatie</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/index.html/#Muziek">Muziek</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/index.html/#Media">Media</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="login.php">Login</a>
+      </li>
+    </ul>
+
+    <br /><br /><br /><br />
+    <div class="main">
+      <div class="blok">
+        <h2>
+          Hi!
+        </h2>
+      </div>
+      <br />
+    </div>
+    <!-- cookie popup -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"
+      data-cfasync="false"
+    ></script>
+    <script>
+      window.cookieconsent.initialise({
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          }
+        },
+        theme: "classic",
+        position: "bottom-left",
+        content: {
+          message: "De Moobs website gebruikt cookies!",
+          dismiss: "Oke",
+          link: "Meer leren?",
+          href: "https://moobs.glitch.me/cookie.html"
+        }
+      });
+    </script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function() {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/5ca49f6c1de11b6e3b06a96e/default";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </body>
+</html>
